@@ -8,7 +8,7 @@
         "start": "browser-sync start --server 'www' --files 'www'"
     },
     "keywords": [],
-    "author": "",
+    "author": "vinjadevix",
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^2.26.12"
