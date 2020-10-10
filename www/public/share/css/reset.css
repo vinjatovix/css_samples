@@ -1,0 +1,39 @@
+/* ----------------------------------------------------------- RESET */
+
+html {
+    line-height: 1.15;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: block;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}

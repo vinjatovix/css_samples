@@ -1,0 +1,59 @@
+/*!     IMPORTS     */
+
+
+/*       RESET      */
+
+@import "../public/share/css/reset.css";
+
+/*    COMPATIBILITY */
+
+@import "../public/share/css/ios.css;";
+@import "../public/share/css/firefox.css";
+@import "../public/share/css/ie.css";
+
+/*      FONTS       */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* DOCUMENT */
+
+:root {
+    --color-dark: black;
+    --color-bright: white;
+}
+
+.nav-bar {
+    background-color: var(--color-dark);
+    color: var(--color-bright);
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bar>ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar>ul>li {
+    align-self: flex-end;
+    padding: 1rem 1rem;
+}
+
+.landing {
+    position: relative;
+    top: 4rem;
+}
+
+.landing>header {
+    text-align: center;
+}
+
+.landing__portrait {
+    width: 16rem;
+    border: 0.9rem solid var(--color-dark);
+    border-radius: 50%;
+}
