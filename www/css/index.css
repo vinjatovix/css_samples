@@ -175,8 +175,6 @@ article.landing.about p:last-child {
     order: 3;
 }
 
-
-}
 @media (min-width: 700px) {
     .landing>header>h1 {
         font-size: 9vw;
@@ -184,30 +182,26 @@ article.landing.about p:last-child {
         flex-grow: 2;
     }
 }
+
 @media (min-width: 900px) {
     .landing {
         flex-direction: row;
         align-items: flex-start;
     }
-    
     .landing> :first-child {
         text-align: right;
     }
-    
     .landing>header,
     .landing>section {
         max-width: 400px;
     }
-    
     .landing.about>section {
         min-width: 50vw;
         flex-grow: 2;
     }
-    
     .landing h3 {
         font-size: 2rem;
     }
-    
     .landing.about {
         justify-content: center;
     }
