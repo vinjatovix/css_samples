@@ -29,6 +29,10 @@ textarea {
     line-height: 1.15;
 }
 
+fieldset {
+    border: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
