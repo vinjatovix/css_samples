@@ -118,9 +118,14 @@ header>h1 {
 
 /* ARTICLE NAV */
 
-header>ul {
+header>nav>ul {
     order: 1;
-    margin-top: 3rem;
+    border: 1px solid red;
+}
+
+header>nav>ul>li {
+    display: inline;
+    margin: 0 1rem;
 }
 
 
@@ -186,8 +191,8 @@ main>section>article>h1 {
     padding: 1rem;
 }
 
-main>section>article>p {
-    margin-bottom: 3rem;
+main>section>article p {
+    margin: 0 1rem 3rem;
 }
 
 main>section>article> :last-child>a {
@@ -230,6 +235,25 @@ form> :last-child {
     font-size: 0.8rem;
 }
 
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type="checkbox"]+label:after {
+    content: '';
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    vertical-align: middle;
+    margin: 0 0.3rem;
+}
+
+input[type="checkbox"]:checked+label:after {
+    content: '\2713';
+    text-align: center;
+    font-weight: bold;
+}
+
 
 /* ------------------------------------------------------------------------- */
 
@@ -247,28 +271,4 @@ form> :last-child {
     header {
         flex-direction: row;
     }
-}
-
-p {
-    margin: 1.5em 0;
-    padding: 0;
-}
-
-input[type="checkbox"] {
-    visibility: hidden;
-}
-
-input[type="checkbox"]+label:after {
-    content: "";
-    display: inline-block;
-    width: 0.8rem;
-    height: 0.8rem;
-    vertical-align: middle;
-    margin: 0 0.3rem;
-}
-
-input[type="checkbox"]:checked+label:after {
-    content: "\2713";
-    text-align: center;
-    font-weight: bold;
 }
