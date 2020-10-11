@@ -120,12 +120,11 @@ header>h1 {
 
 header>nav>ul {
     order: 1;
-    border: 1px solid red;
 }
 
 header>nav>ul>li {
-    display: inline;
-    margin: 0 1rem;
+    display: inline-block;
+    margin: 0.5rem 1rem 0;
 }
 
 
