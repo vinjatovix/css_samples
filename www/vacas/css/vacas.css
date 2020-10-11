@@ -30,6 +30,9 @@ body {
 
 body {
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -45,6 +48,7 @@ input[type="checkbox"]+label:after {
     background: var(--color-corp);
 }
 
+body,
 header>section>a,
 main>section>article,
 form> :last-child {
@@ -97,6 +101,7 @@ header {
 }
 
 header>* {
+    border: 1px solid red;
     flex-grow: 1;
     max-width: 1024px;
     max-height: 576px;
@@ -110,6 +115,7 @@ header>* {
 
 header>h1 {
     order: 2;
+    flex-grow: 2;
 }
 
 
@@ -120,9 +126,11 @@ header>h1 {
 
 header>nav>ul {
     order: 1;
+    flex-wrap: wrap;
+    border: 3px solid red;
 }
 
-header>nav>ul>li {
+header>nav>ul>li>a {
     display: inline-block;
     margin: 0.5rem 1rem 0;
 }
@@ -182,7 +190,7 @@ main section {
 }
 
 main>section>article {
-    max-width: 400px;
+    max-width: 300px;
     margin: 1rem;
 }
 
@@ -264,10 +272,20 @@ input[type="checkbox"]:checked+label:after {
         margin: 0 auto;
         flex-direction: row;
     }
+    header>h1 {
+        flex-grow: 2;
+    }
 }
 
 @media (min-width: 700px) {
     header {
+        padding: 2rem 0;
         flex-direction: row;
+        justify-content: center;
+        max-height: 576px;
+    }
+    header,
+    main {
+        max-width: 1024px;
     }
 }
