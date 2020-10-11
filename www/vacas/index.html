@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacas</title>
+    <link rel="stylesheet" href="./css/vacas.css">
 </head>
 
 <body>
@@ -15,12 +16,12 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="#lorem">
                             Lorem, ipsum.
                         </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#comprar">
                             Lorem, ipsum.
                         </a>
                 </li>
@@ -33,7 +34,7 @@
 </body>
 <main>
     <article>
-        <h1>Lorem, ipsum.</h1>
+        <h1 id='lorem'>Lorem, ipsum.</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo alias ex dicta natus mollitia? Odio aut, libero harum inventore voluptas deserunt debitis cumque aperiam magnam cum voluptate sequi deleniti atque?
         </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt delectus architecto beatae ratione laudantium exercitationem.</p>
@@ -42,6 +43,7 @@
     </article>
     <section>
         <article>
+            <figure><img src="https://source.unsplash.com/400x400/?cow" alt=""></figure>
             <h1>Vaca 1</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quis vero fugiat explicabo omnis. Fugiat.</p>
             <section>
@@ -50,6 +52,7 @@
 
         </article>
         <article>
+            <figure><img src="https://source.unsplash.com/400x400/?cow" alt=""></figure>
             <h1>Vaca 2</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quis vero fugiat explicabo omnis. Fugiat.</p>
             <section>
@@ -58,6 +61,7 @@
 
         </article>
         <article>
+            <figure><img src="https://source.unsplash.com/400x400/?cow" alt=""></figure>
             <h1>Vaca 3</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quis vero fugiat explicabo omnis. Fugiat.</p>
             <section>
@@ -66,7 +70,7 @@
 
         </article>
     </section>
-    <form action=".">
+    <form id='comprar' action=".">
         <legend>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </legend>
@@ -87,9 +91,9 @@
                 </optgroup>
             </select>
         </fieldset>
-        <fieldset>
-            <label for="mailList">Recibir newsletter?</label>
+        <fieldset class="checkbox">
             <input type="checkbox" name="mailList" id="mailList">
+            <label for="mailList">Recibir newsletter?</label>
         </fieldset>
         <fieldset>
             <button type="submit">Enviar</button>
