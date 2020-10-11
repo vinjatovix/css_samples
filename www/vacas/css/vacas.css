@@ -1,0 +1,274 @@
+/*!     IMPORTS     */
+
+
+/*       RESET      */
+
+@import "../../public/share/css/reset.css";
+
+/*    COMPATIBILITY */
+
+@import "../../public/share/css//ios.css;";
+@import "../../public/share/css//firefox.css";
+@import "../../public/share/css//ie.css";
+
+/* ! FONTS AND COLORS */
+
+
+/*      FONTS       */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --color-bright: rgb(255, 255, 255);
+    --color-dark: black;
+    --color-corp: #f58021;
+    --color-medium: gray;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* BG COLORS */
+
+main,
+input,
+select {
+    background-color: var(--color-corp);
+}
+
+input[type="checkbox"]+label:after {
+    background: var(--color-corp);
+}
+
+header>section>a,
+main>section>article,
+form> :last-child {
+    background-color: var(--color-dark);
+}
+
+form {
+    background-color: var(--color-bright);
+}
+
+main>section>article> :last-child {
+    background-color: var(--color-medium);
+}
+
+
+/* FF COLORS */
+
+legend {
+    color: var(--color-corp);
+}
+
+h1,
+header>section>a,
+main>section>article,
+form> :last-child {
+    color: var(--color-bright);
+}
+
+input[type="checkbox"]+label:after,
+input[type="checkbox"]:checked+label:after {
+    color: var(--color-dark);
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* HEADER */
+
+header {
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(https://source.unsplash.com/1920x1080/?cow);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header>* {
+    flex-grow: 1;
+    max-width: 1024px;
+    max-height: 576px;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* TITLE */
+
+header>h1 {
+    order: 2;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* ARTICLE NAV */
+
+header>ul {
+    order: 1;
+    margin-top: 3rem;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* HEADER C2A */
+
+header>section {
+    order: 3;
+}
+
+a {
+    display: inline-block;
+    cursor: pointer;
+}
+
+header>section>a {
+    margin-top: 0.7rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* MAIN */
+
+main {
+    padding: 1rem 0rem 30vh;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+main>article {
+    padding: 1rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+}
+
+
+/* SECTION */
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+main>section>article {
+    max-width: 400px;
+    margin: 1rem;
+}
+
+main>section>article>h1 {
+    padding: 1rem;
+}
+
+main>section>article>p {
+    margin-bottom: 3rem;
+}
+
+main>section>article> :last-child>a {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* FORM */
+
+form {
+    padding: 1rem;
+}
+
+legend {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    padding: 1rem 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input,
+select {
+    min-width: 100%;
+    padding: 0.3rem;
+}
+
+form> :last-child {
+    display: inline-block;
+    margin-top: 0.7rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* RESPONSIVE */
+
+@media (min-width: 500) {
+    header {
+        margin: 0 auto;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 700px) {
+    header {
+        flex-direction: row;
+    }
+}
+
+p {
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type="checkbox"]+label:after {
+    content: "";
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    vertical-align: middle;
+    margin: 0 0.3rem;
+}
+
+input[type="checkbox"]:checked+label:after {
+    content: "\2713";
+    text-align: center;
+    font-weight: bold;
+}
