@@ -58,6 +58,7 @@ header>p {
 
 main {
     padding: 1rem 1rem 6rem;
+    max-width: 430px;
 }
 
 article {
@@ -74,9 +75,12 @@ h1 {
 
 article>img {
     order: 2;
+    max-width: 100%;
     width: 100vw;
     height: 40vh;
     background-image: url(https://source.unsplash.com/400x300/?womanface);
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-bottom: 1rem;
 }
 
@@ -112,4 +116,35 @@ button {
     width: 25vw;
     background-color: var(--color-dark);
     color: var(--color-bright);
+}
+
+@media (min-width: 430px) {
+    main {
+        max-width: 100%;
+    }
+    article {
+        flex-direction: column;
+        align-content: flex-end;
+    }
+    article>img {
+        order: 2;
+        max-width: 100%;
+        flex-grow: 1;
+        height: 25vh;
+        background-image: url(https://source.unsplash.com/400x300/?womanface);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 1rem;
+        align-self: flex-end;
+    }
+    article>p:first-of-type {
+        flex-grow: 2;
+        width: 60vw;
+    }
+}
+
+@media (min-width:700px) {
+    main {
+        max-width: 700px;
+    }
 }
