@@ -206,3 +206,9 @@ article.landing.about p:last-child {
         justify-content: center;
     }
 }
+
+@media (min-width:1200px) {
+    .landing>header>h1 {
+        font-size: 7vw;
+    }
+}
