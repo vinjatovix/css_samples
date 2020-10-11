@@ -126,12 +126,12 @@ header>h1 {
 
 header>nav>ul {
     order: 1;
-    flex-wrap: wrap;
     border: 3px solid red;
+    display: flex;
+    justify-content: space-between;
 }
 
 header>nav>ul>li>a {
-    display: inline-block;
     margin: 0.5rem 1rem 0;
 }
 
@@ -287,5 +287,8 @@ input[type="checkbox"]:checked+label:after {
     header,
     main {
         max-width: 1024px;
+    }
+    form {
+        margin-top: 3rem;
     }
 }
