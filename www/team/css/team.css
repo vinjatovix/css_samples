@@ -23,9 +23,9 @@ body {
 /*! COLORS -------------------------------------------------------- */
 
 :root {
-    --color-bright: rgb(255, 255, 255);
+    --color-bright: white;
     --color-dark: black;
-    --color-corp: #f58021;
+    --color-corp: #dd902b;
     --color-medium: gray;
     --color-highlight: rebeccapurple;
     --bg-header: url(https://images.pexels.com/photos/325257/pexels-photo-325257.jpeg?cs=srgb&dl=pexels-matthias-zomer-325257.jpg&fm=jpg);
@@ -67,7 +67,6 @@ main {
 a {
     cursor: pointer;
     display: block;
-    outline: 1px solid red;
     height: 100%;
 }
 
@@ -104,18 +103,6 @@ img {
     background-size: cover;
 }
 
-#i1 {
-    background-image: url(https://source.unsplash.com/400x400/?portrait1);
-}
-
-#i2 {
-    background-image: url(https://source.unsplash.com/400x400/?portrait2);
-}
-
-#i3 {
-    background-image: url(https://source.unsplash.com/400x400/?portrait3);
-}
-
 h2 {
     margin: 1rem;
 }
@@ -127,12 +114,6 @@ p {
 
 p:last-of-type {
     margin-bottom: 6vh;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
 }
 
 ul {
