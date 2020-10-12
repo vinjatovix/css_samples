@@ -3,13 +3,13 @@
 
 /*       RESET      */
 
-@import "../public/share/css/reset.css";
+@import "../../public/share/css/reset.css";
 
 /*    COMPATIBILITY */
 
-@import "../public/share/css/ios.css;";
-@import "../public/share/css/firefox.css";
-@import "../public/share/css/ie.css";
+@import "../../public/share/css/ios.css;";
+@import "../../public/share/css/firefox.css";
+@import "../../public/share/css/ie.css";
 
 /*      FONTS       */
 
