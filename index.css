@@ -15,7 +15,6 @@ header {
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 h1 {
