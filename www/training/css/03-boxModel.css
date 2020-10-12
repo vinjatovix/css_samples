@@ -1,0 +1,126 @@
+@import '../../public/share/css/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@700&display=swap');
+:root {
+    --color-dark: black;
+    --color-bright: white;
+    --color-medium: gray;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+aside {
+    background-color: var(--color-medium);
+    padding: 1rem;
+    text-align: center;
+}
+
+header {
+    background-color: var(--color-dark);
+    color: var(--color-bright);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+header>section>a {
+    background-color: var(--color-bright);
+    color: var(--color-dark);
+    padding: 0.5rem 1rem;
+    display: block;
+    cursor: pointer;
+}
+
+header p {
+    font-size: 0.8rem;
+}
+
+article>section>p {
+    padding: 1rem 1rem 0;
+}
+
+article>section:first-of-type {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+footer>a {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-medium);
+}
+
+article {
+    position: relative;
+    padding-bottom: 1rem;
+    background-color: var(--color-bright);
+}
+
+@media (min-width: 700px) {
+    body {
+        background-image: url('https://source.unsplash.com/random/?gray');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        padding: 3rem;
+    }
+    header>h1 {
+        font-size: 3rem;
+    }
+    header>h2 {
+        padding: 1rem;
+    }
+    main,
+    footer {
+        max-width: 80vw;
+    }
+    aside>h3 {
+        font-size: 0.8rem;
+    }
+    aside>p {
+        font-size: 0.6rem;
+    }
+    aside {
+        position: absolute;
+        top: 2vw;
+        right: 0;
+        width: 120px;
+    }
+}
+
+@media (min-width: 1000px) {
+    aside>h3 {
+        font-size: 0.9rem;
+    }
+    aside>p {
+        font-size: 0.6rem;
+    }
+    aside {
+        top: 4vw;
+    }
+}
