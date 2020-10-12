@@ -41,6 +41,10 @@
         text-shadow: 1px 1px 4px rgba(104, 140, 145, 0.719);
     }
     
+    nav {
+        margin-bottom: 2rem;
+    }
+    
     ul {
         display: flex;
         flex-direction: row;
