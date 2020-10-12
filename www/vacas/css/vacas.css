@@ -327,6 +327,21 @@ input[type="checkbox"]:checked+label:after {
     }
 }
 
+
+/* WORKING LINES */
+
 header>* {
-    border: 1px solid red;
+    outline: 1px solid red;
+}
+
+header>*>* {
+    outline: 1px solid green;
+}
+
+header>*>*>* {
+    outline: 1px solid blue
+}
+
+body * {
+    outline: 1px dashed rebeccapurple;
 }
