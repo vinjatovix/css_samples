@@ -1,0 +1,348 @@
+/*!     IMPORTS     ---------------------------------------------- */
+
+
+/*       RESET      */
+
+@import "../../public/share/css/reset.css";
+
+/*    COMPATIBILITY */
+
+@import "../../public/share/css//ios.css;";
+@import "../../public/share/css//firefox.css";
+@import "../../public/share/css//ie.css";
+
+/* ! FONTS -------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*! COLORS -------------------------------------------------------- */
+
+:root {
+    --color-bright: rgb(255, 255, 255);
+    --color-dark: black;
+    --color-corp: #f58021;
+    --color-medium: gray;
+    --bg-header: url(https://images.pexels.com/photos/325257/pexels-photo-325257.jpeg?cs=srgb&dl=pexels-matthias-zomer-325257.jpg&fm=jpg);
+}
+
+
+/* BG COLORS */
+
+main,
+input,
+select {
+    background-color: var(--color-corp);
+}
+
+input[type="checkbox"]+label:after {
+    background: var(--color-corp);
+}
+
+body,
+header>section>a,
+main>section>article,
+form> :last-child {
+    background-color: var(--color-dark);
+}
+
+form {
+    background-color: var(--color-bright);
+}
+
+main>section>article> :last-child {
+    background-color: var(--color-medium);
+}
+
+
+/* FF COLORS */
+
+legend {
+    color: var(--color-corp);
+}
+
+h1,
+header>section>a,
+main>section>article,
+form> :last-child {
+    color: var(--color-bright);
+}
+
+input[type="checkbox"]+label:after,
+input[type="checkbox"]:checked+label:after {
+    color: var(--color-dark);
+}
+
+
+/*! ------------------------------------------------------------------------- */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a,
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100vw;
+    height: 56.25vw;
+    max-width: 1024px;
+    max-height: 576px;
+    background-image: var(--bg-header);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+header>* {
+    flex-grow: 1;
+}
+
+
+/* TITLE */
+
+header>h1 {
+    order: 2;
+    text-shadow: 1px 1px 100px black;
+}
+
+
+/* ARTICLE NAV */
+
+header>nav>ul {
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>nav>ul>li>a {
+    margin: 0.5rem 1rem 0;
+}
+
+
+/* HEADER C2A */
+
+header>section {
+    order: 3;
+}
+
+header>section>a,
+form> :last-child {
+    margin-top: 0.7rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* MAIN */
+
+main {
+    padding: 1rem 0rem 30vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main>article,
+main>section>article>h1,
+form,
+label,
+main>section>article> :last-child>a {
+    padding: 1rem;
+}
+
+main p,
+h1,
+legend {
+    margin-bottom: 1rem;
+}
+
+
+/* SECTION */
+
+main section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+main>section>article {
+    margin: 1rem;
+    max-width: 300px;
+}
+
+main>section>article p {
+    margin: 0 1rem 3rem;
+}
+
+main>section>article> :last-child>a {
+    width: 100%;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* FORM */
+
+legend {
+    font-size: 2rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 0.3rem;
+    min-width: 100%;
+}
+
+form> :last-child {
+    display: inline-block;
+}
+
+
+/* CHECKBOX */
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type="checkbox"]+label:after {
+    content: "";
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    vertical-align: middle;
+    margin: 0 0.3rem;
+}
+
+input[type="checkbox"]:checked+label:after {
+    content: "\2713";
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* RESPONSIVE */
+
+@media (min-height: 500px) {
+    p {
+        font-size: 2.5vh;
+    }
+    h1,
+    legend {
+        font-size: 7vh;
+    }
+}
+
+@media (min-width: 500px) {
+    header {
+        padding: 3vh 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    header>nav {
+        max-width: 32vw;
+    }
+    header>nav>ul {
+        justify-content: flex-start;
+    }
+    header section:last-child {
+        padding-right: 5vw;
+        text-align: right;
+    }
+    form {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    form>fieldset:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 1;
+    }
+    input,
+    select {
+        padding: 0.3rem;
+    }
+    label,
+    input,
+    select {
+        width: 23vw;
+    }
+    form>fieldset:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+    }
+    select {
+        width: 20vw;
+        min-width: 50%;
+    }
+    form>fieldset:last-child {
+        width: 1vw;
+    }
+}
+
+@media (min-width: 700px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        max-height: 576px;
+    }
+    header,
+    main {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        align-items: center;
+    }
+}
+
+
+/* WORKING LINES */
+
+
+/* header>* {
+    outline: 1px solid red;
+}
+
+header>*>* {
+    outline: 1px solid green;
+}
+
+header>*>*>* {
+    outline: 1px solid blue
+}
+
+body * {
+    outline: 1px dashed rebeccapurple;
+} */

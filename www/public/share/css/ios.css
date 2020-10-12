@@ -4,12 +4,13 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-button,
+
+/* button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
     -webkit-appearance: button;
-}
+} */
 
 [type="search"] {
     -webkit-appearance: textfield;
