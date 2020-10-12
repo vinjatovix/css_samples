@@ -90,7 +90,7 @@ body {
 }
 
 .landing>header>h1 {
-    font-size: 9vw;
+    font-size: 7vw;
     font-weight: bolder;
 }
 
@@ -124,6 +124,10 @@ body {
 
 .landing> :nth-child(3) {
     order: 3;
+}
+
+.landing> :nth-child(3) li {
+    padding: 0.5rem;
 }
 
 .landing>section>h2 {
