@@ -276,18 +276,6 @@ input[type="checkbox"]:checked+label:after {
         padding-right: 5vw;
         text-align: right;
     }
-}
-
-@media (min-width: 700px) {
-    header {
-        flex-direction: row;
-        justify-content: space-around;
-        max-height: 576px;
-    }
-    header,
-    main {
-        max-width: 1024px;
-    }
     form {
         margin-top: 3rem;
         display: flex;
@@ -321,6 +309,18 @@ input[type="checkbox"]:checked+label:after {
     }
 }
 
+@media (min-width: 700px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        max-height: 576px;
+    }
+    header,
+    main {
+        max-width: 1024px;
+    }
+}
+
 @media (min-width: 1024px) {
     body {
         align-items: center;
@@ -330,7 +330,8 @@ input[type="checkbox"]:checked+label:after {
 
 /* WORKING LINES */
 
-header>* {
+
+/* header>* {
     outline: 1px solid red;
 }
 
@@ -344,4 +345,4 @@ header>*>*>* {
 
 body * {
     outline: 1px dashed rebeccapurple;
-}
+} */
