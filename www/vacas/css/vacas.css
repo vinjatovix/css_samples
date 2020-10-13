@@ -163,13 +163,14 @@ h1 {
 main>article,
 main>section>article>h1,
 form,
-label,
 main>section>article> :last-child>a {
     padding: 1rem;
 }
 
 main p,
 h1,
+label,
+input,
 legend {
     margin-bottom: 1rem;
 }
@@ -288,7 +289,7 @@ input[type="checkbox"]:checked+label:after {
     }
     input,
     select {
-        padding: 0.3rem;
+        padding: 0.3rem 0;
     }
     label,
     input,
