@@ -137,11 +137,13 @@ header>nav>ul>li>a {
 /* HEADER C2A */
 
 header>div {
+    align-self: flex-end;
     order: 3;
 }
 
 header>div>section>a,
 form> :last-child {
+    border: 1px solid red;
     margin-top: 0.7rem;
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
@@ -264,6 +266,10 @@ input[type="checkbox"]:checked+label:after {
         padding-top: 2rem;
         flex-direction: row;
         justify-content: space-be;
+    }
+    header>div {
+        align-self: flex-start;
+        order: 3;
     }
     header>nav>ul {
         width: 25vw;
