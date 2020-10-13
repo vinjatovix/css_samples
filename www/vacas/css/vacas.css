@@ -154,6 +154,7 @@ form> :last-child {
 /* MAIN */
 
 main {
+    max-width: 1024px;
     padding: 1rem 0rem 30vh;
 }
 
