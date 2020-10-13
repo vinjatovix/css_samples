@@ -317,15 +317,15 @@ header>div {
     order: 3;
 }
 
-
-}
 @media (min-width: 1024px) {
     body {
         align-items: center;
     }
 }
 
+
 /* WORKING LINES */
+
 
 /* header>* {
     outline: 1px solid red;
