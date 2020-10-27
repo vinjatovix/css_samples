@@ -1,41 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  background: black url(http://sonvina.es/img/avatar.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
   font-size: 10px;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
   display: grid;
-  justify-items: center;
+  background: black url(./avatar.png);
   align-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
 }
 
 header {
-  width: 37.5rem;
-  height: 37.5rem;
-  border: 40px solid rgba(0, 0, 0, 0.842);
+  width: 100vw;
+  height: 100vw;
+  border: 20px solid rgba(0,0,0, 0.842);
   border-radius: 50%;
   position: relative;
-  transform: translateY(2.6rem) translateX(-0.5rem);
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.795), inset 0 0 0 7px #6d6765bd, inset 0 0 10px rgb(238, 222, 222),
-    0 0 10px rgba(0, 153, 255, 0.2);
+  transform: translateY(0rem) translateX(0rem);
+  box-shadow: 0px 0px 10px 10px rgb(0, 0, 0), inset 0 0 0 7px #e24009e0,
+  inset 0px 3px 30px rgba(235, 171, 141, 0.87),
+  -3px -3px 10px rgba(53, 213, 235, 0.308);
 }
-
-section{
+section {
   position: relative;
   width: 100%;
   height: 100%;
-  transform: translateY(-0.6rem) translateX(1.4rem);
+  transform: translateY(0.5rem) translateX(0.8rem);
 }
 
 p {
@@ -47,8 +45,64 @@ p {
 
   position: absolute;
   top: 50%;
-  transform-origin: 99%;
+  transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.25s;
   transition-timing-function: cubic-bezier(0.05, 1, 0.49, 1);
+}
+@media (min-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }
+
+  html {
+    background: black url(http://sonvina.es/img/avatar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 10px;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+  }
+
+  header {
+    width: 35.5rem;
+    height: 35.5rem;
+    border: 20px solid rgba(0, 0, 0, 0.918);
+    border-radius: 50%;
+    position: relative;
+    transform: translateY(2.3rem) translateX(-0.5rem);
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0), inset 0 0 0 7px #e24009e0,
+      inset 0px 3px 30px rgba(235, 171, 141, 0.87),
+      -3px -3px 10px rgba(53, 213, 235, 0.308);
+  }
+
+  section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-0.6rem) translateX(1.5rem);
+  }
+
+  p {
+    border: 1px solid rgba(255, 255, 254, 0.568);
+    width: 45%;
+    height: 1rem;
+    background: rgba(12, 10, 10, 0.829);
+    box-shadow: -2px -2px 10px black;
+
+    position: absolute;
+    transform-origin: 99%;
+    transform: rotate(90deg);
+    transition: all 0.25s;
+    transition-timing-function: cubic-bezier(0.05, 1, 0.49, 1);
+  }
 }
